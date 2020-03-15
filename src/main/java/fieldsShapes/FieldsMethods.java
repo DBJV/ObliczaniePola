@@ -1,3 +1,5 @@
+package fieldsShapes;
+
 public class FieldsMethods {
 
     public int fieldTriangle(int a, int h){
