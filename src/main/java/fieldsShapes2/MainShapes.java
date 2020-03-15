@@ -16,30 +16,16 @@ public class MainShapes {
         System.out.println(" ************************");
         System.out.println("Pierwszy sposob:");
 
-        for (int i = 0; i < tablica.length; i++) {
-            tablica[i].calculateField(i, 2);
-            System.out.println(i);
-        }
-        System.out.println("Dla indexu 0 tablicy");
-        for (int i = 0; i < tablica.length; i++) {
-            tablica[0].calculateField(i, 2);
-        }
-        System.out.println("Dla indexu 1 tablicy");
+
+
 
         for (int i = 0; i < tablica.length; i++) {
-            tablica[1].calculateField(i, 2);
-        }        System.out.println("Dla indexu 2 tablicy");
+            System.out.println();
+            System.out.println("Jestesmy w " + i + " indexie tablicy.");
 
-        for (int i = 0; i < tablica.length; i++) {
-            tablica[2].calculateField(i, 2);
-        }        System.out.println("Dla indexu 3 tablicy");
-
-        for (int i = 0; i < tablica.length; i++) {
-            tablica[3].calculateField(i, 2);
-        }        System.out.println("Dla indexu 4 tablicy");
-
-        for (int i = 0; i < tablica.length; i++) {
-            tablica[4].calculateField(i, 2);
+            for (int j = 0; j < tablica.length; j++) {
+                tablica[i].calculateField(j, 2);
+            }
         }
     }
 }
