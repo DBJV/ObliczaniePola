@@ -1,6 +1,9 @@
 package fieldsShapes2;
 
 public class MainShapes {
+
+    private final static int FIXED_SHAPE_LENGHT = 2;
+
     public static void main(String[] args) {
 
         Triangle trojkat = new Triangle();
@@ -14,18 +17,10 @@ public class MainShapes {
         tablica[1].calculateField(3, 4);
 
         System.out.println(" ************************");
-        System.out.println("Pierwszy sposob:");
 
-
-
-
+        
         for (int i = 0; i < tablica.length; i++) {
-            System.out.println();
-            System.out.println("Jestesmy w " + i + " indexie tablicy.");
-
-            for (int j = 0; j < tablica.length; j++) {
-                tablica[i].calculateField(j, 2);
-            }
+            tablica[i].calculateField(i, FIXED_SHAPE_LENGHT);
         }
     }
 }
